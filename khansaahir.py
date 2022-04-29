@@ -45,8 +45,8 @@ def main_apv():
     os.system('clear')
     print logo
     try:
-        
-    except IOError:
+        key1 = open('/sdcard/imt.txt', 'r').read()
+     except IOError:
         os.system('clear')
         print logo
         print '           You dont have subscrption'
@@ -84,7 +84,7 @@ def main_apv():
         print '           Subscription Kelya Enter Press Kro'
         print '           Or Whatsapp Pa Rabta Kro Thanks'
         print ''
-        print '         
+        print '         YOUR KEY : ' + key1
         print ''
         print '           Ya Uper Wale Ap Ke KEY Ha'
         print '           Copy Kar Ka WhatsApp Pa Bhaj Dena'
@@ -98,7 +98,7 @@ def main_apv():
 
 def main_system():
     try:
-        
+        token = open('token.txt', 'r').read()
     except:
         pass
 
